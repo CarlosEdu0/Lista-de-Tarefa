@@ -1,29 +1,27 @@
-const tarefas = ['Estudar HTML', 'Estudar CSS', 'Estudar JS']
+// function add() {
+//     const input = document.querySelector("input")
+//     const ul = document.querySelector("ul")
+//     const li = document.createElement("li")
+//     const tarefas = []
+//     tarefas.push(input.value)
+//     input.value = ""
+//     ul.appendChild(li)
+//     li.innerText = tarefas
+// }
+
+// addEventListener("keyup", (event) => {
+//     if (event.key === "Enter") {
+//         add();
+//     }
+
+// });
 
 
 function add() {
-    const ul = document.querySelector("ul")
     const input = document.querySelector("input")
-    const tarefa = input.value
-
-    const li = document.createElement("li")
-    li.innerText = tarefa
-    ul.appendChild(li)
-    tarefa.push(tarefa)
-    input.value = ""
-    render()
-}
-
-function render() {
     const ul = document.querySelector("ul")
-    ul.innerHTML = null
-    tarefas.forEach(function(tarefa) {
-        const li = document.createElement("li")
-        li.innerText = tarefa
-        ul.appendChild(li)
-    })
-
+    const li = document.createElement("li")
+    const teopai = input.value
+    ul.appendChild(li)
+    li.innerText = teopai
 }
-
-
-render()
